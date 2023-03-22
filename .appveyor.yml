@@ -55,7 +55,7 @@ build_script:
     if (-not (Test-Path c:\build-cache\$bname)) {
             Invoke-WebRequest "http://windows.php.net/downloads/releases/archives/$bname" -OutFile "c:\build-cache\$bname"
             if (-not (Test-Path c:\build-cache\$bname)) {
-                    Invoke-WebRequest "http://windows.php.net/downloads/archives/releases/$bname" -OutFile "c:\build-cache\$bname"
+                    Invoke-WebRequest "http://windows.php.net/downloads/releases/archives/$bname" -OutFile "c:\build-cache\$bname"
             }
     }
     
